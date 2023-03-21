@@ -6,9 +6,9 @@ import pandas
 # pull data into pandas
 csv_stanford = pandas.read_csv("rawdata\crimedata\openpolicingstanfordedu\ma-state-patrol.csv")
 nrows_stanford, ncols_stanford = csv_stanford.shape
-print("there are " + str(nrows_stanford) + " rows and " + str(ncols_stanford) + " cols in raw csv")
+print("there are " + str(nrows_stanford) + " rows and " + str(ncols_stanford) + " cols in raw csv_stanford")
 # filter by boston
 csv_stanford = csv_stanford[csv_stanford['location'] == "BOSTON"]
 nrows_stanford, ncols_stanford = csv_stanford.shape
-print("there are " + str(nrows_stanford) + " rows and " + str(ncols_stanford) + " cols in filtered data")
+print("there are " + str(nrows_stanford) + " rows and " + str(ncols_stanford) + " cols in filtered csv_stanford")
 
