@@ -65,9 +65,11 @@ checkbook_2020 = checkbook_2020[checkbook_2020['dept_name'] == "Police Departmen
 nrows_stanford_20, ncols_stanford_20 = checkbook_2020.shape
 print("there are " + str(nrows_stanford_20) + " rows and " + str(nrows_stanford_20) + " cols in filtered checkbook_2020")
 
+# THE FOLLOWING CODE IS COMMENTED OUT BECAUSE IT ERRORS SAYING THE FILE DOESNT EXIST WHEN IT DOES, IDK WHAT TO DO ABT THAT
+"""
 #checkbook_2021 = pandas.read_csv("rawdata/spending_data/checkbook-explorer-fy21.csv")
 # THIS LINE WORKS ON MAC (I BELIEVE) WHILE ONE BELOW WORKS ON WINDOWS
-checkbook_2021 = pandas.read_csv("checkbook-explorer-fy21.csv")
+checkbook_2021 = pandas.read_csv("rawdata/spending_data/checkbook_explorerfy21.csv")
 nrows_stanford_21, ncols_stanford_21 = checkbook_2021.shape
 print("there are " + str(nrows_stanford_21) + " rows and " + str(nrows_stanford_21) + " cols in raw checkbook_2021")
 # filter by boston
@@ -77,7 +79,7 @@ print("there are " + str(nrows_stanford_21) + " rows and " + str(nrows_stanford_
 
 #checkbook_2022 = pandas.read_csv("rawdata/spending_data/checkbook-explorer-fy22.csv")
 # THIS LINE WORKS ON MAC (I BELIEVE) WHILE ONE BELOW WORKS ON WINDOWS
-checkbook_2022 = pandas.read_csv("checkbook-explorer-fy22.csv")
+checkbook_2022 = pandas.read_csv("checkbook-explorerfy22.csv")
 nrows_stanford_22, ncols_stanford_22 = checkbook_2022.shape
 print("there are " + str(nrows_stanford_22) + " rows and " + str(nrows_stanford_22) + " cols in raw checkbook_2022")
 # filter by boston
@@ -85,5 +87,5 @@ checkbook_2022 = checkbook_2022[checkbook_2022['dept_name'] == "Police Departmen
 nrows_stanford_22, ncols_stanford_22 = checkbook_2022.shape
 print("there are " + str(nrows_stanford_22) + " rows and " + str(nrows_stanford_22) + " cols in filtered checkbook_2022")
 
-
+"""
 
