@@ -37,8 +37,9 @@ At least one, if not multiple of OFFENSE_CODE, OFFENSE_CODE_GROUP, or OFFENSE_CO
 2. What are the identifying attributes?
 3. Where is the data from?
     - How did you collect your data?
-      We collected the spending data and crime data directly from 
+      We collected the spending data and crime incident report data directly from https://data.boston.gov/, the official website that houses the City of Boston's open data hub. The state patrol data came from The Stanford Open Policing Project (https://openpolicing.stanford.edu/). 
     - Is the source reputable?
+      Both sources are reputable, the data from the Stanford Open Policing Project was collected from public traffic stop data and is heavily documented on the methods used in cleaning and organizing the data. The rest of the data was collected from a government website.
     - How did you generate the sample? Is it comparably small or large? Is it representative or is it likely to exhibit some kind of sampling bias?
     - Are there any other considerations you took into account when collecting your data? This is open-ended based on your data; feel free to leave this blank. (Example: If it's user data, is it public/are they consenting to have their data used? Is the data potentially skewed in any direction?)
 4. How clean is the data? Does this data contain what you need in order to complete the project you proposed to do? (Each team will have to go about answering this question differently but use the following questions as a guide. Graphs and tables are highly encouraged if they allow you to answer these questions more succinctly.)
