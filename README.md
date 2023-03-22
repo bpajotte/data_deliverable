@@ -38,10 +38,10 @@ At least one, if not multiple of OFFENSE_CODE, OFFENSE_CODE_GROUP, or OFFENSE_CO
   - Do you think this is enough data to perform your analysis later on?
 2. What are the identifying attributes?
 3. Where is the data from?
-  - How did you collect your data?
-  - Is the source reputable?
-  - How did you generate the sample? Is it comparably small or large? Is it representative or is it likely to exhibit some kind of sampling bias?
-  - Are there any other considerations you took into account when collecting your data? This is open-ended based on your data; feel free to leave this blank. (Example: If it's user data, is it public/are they consenting to have their data used? Is the data potentially skewed in any direction?)
+    - How did you collect your data?
+    - Is the source reputable?
+    - How did you generate the sample? Is it comparably small or large? Is it representative or is it likely to exhibit some kind of sampling bias?
+    - Are there any other considerations you took into account when collecting your data? This is open-ended based on your data; feel free to leave this blank. (Example: If it's user data, is it public/are they consenting to have their data used? Is the data potentially skewed in any direction?)
 4. How clean is the data? Does this data contain what you need in order to complete the project you proposed to do? (Each team will have to go about answering this question differently but use the following questions as a guide. Graphs and tables are highly encouraged if they allow you to answer these questions more succinctly.)
   - How did you check for the cleanliness of your data? What was your threshold reference?
   - Did you implement any mechanism to clean your data? If so, what did you do?
