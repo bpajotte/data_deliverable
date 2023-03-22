@@ -34,11 +34,12 @@ At least one, if not multiple of OFFENSE_CODE, OFFENSE_CODE_GROUP, or OFFENSE_CO
 
 ## TECH REPORT
 1. How many data points are there in total? How many are there in each group you care about (e.g. if you are dividing your data into positive/negative examples, are they split evenly)? 
-  - Aim for a resource of reasonable size. At least 500 records after cleaning and duplicate removal. Account that part of your data should be used for validation of your results only. 
-  - Do you think this is enough data to perform your analysis later on?
+    - Aim for a resource of reasonable size. At least 500 records after cleaning and duplicate removal. Account that part of your data should be used for validation of your results only. 
+    - Do you think this is enough data to perform your analysis later on?
 2. What are the identifying attributes?
 3. Where is the data from?
     - How did you collect your data?
+      We collected the spending data and crime data directly from 
     - Is the source reputable?
     - How did you generate the sample? Is it comparably small or large? Is it representative or is it likely to exhibit some kind of sampling bias?
     - Are there any other considerations you took into account when collecting your data? This is open-ended based on your data; feel free to leave this blank. (Example: If it's user data, is it public/are they consenting to have their data used? Is the data potentially skewed in any direction?)
