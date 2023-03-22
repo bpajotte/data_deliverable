@@ -68,6 +68,3 @@ print("there are " + str(nrows_stanford_22) + " rows and " + str(ncols_stanford_
 checkbook_2022 = checkbook_2022[checkbook_2022['Dept_Name'] == "Police Department"]
 nrows_stanford_22, ncols_stanford_22 = checkbook_2022.shape
 print("there are " + str(nrows_stanford_22) + " rows and " + str(ncols_stanford_22) + " cols in filtered checkbook_2022")
-
-
-
