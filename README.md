@@ -1,7 +1,7 @@
 # data_deliverable
 https://docs.google.com/document/d/1THSZfTRn_139Aef4ZJ1YSEr0z6ayIukJi6H28PqeKww/edit#heading=h.11eeen9guiry
 
-## DATA SPEC:
+## DATA SPEC
 We effectively have two data sets :
 1. Government spending by the City of Boston, from the CSV files named 'checkbook_explorer_fyXX'.
 2. Crime reports from the City of Boston, from the CSV files named 'crime incident reports - 20XX'.
@@ -30,3 +30,22 @@ The following three attributes of our crime incident reports are very similar, s
 - `OFFENSE_CODE_DESCRIPTION`: A string representing the specific offense committed. These strings are equivalent to the number in OFFENSE_CODE - the value of OFFENSE_CODE_DESCRIPTION for a given record is the offense associated with its OFFENSE_CODE value, translated through rmsoffensecodes.xlsx. There is again no default value, range, or distribution. These values are similarly not unique, and will not be used in regards to duplicates. This value is required. These strings do not contain sensitive information. 
 
 At least one, if not multiple of OFFENSE_CODE, OFFENSE_CODE_GROUP, or OFFENSE_CODE_DESCRIPTION will be used in our analysis. Once we begin our analysis, we will need to isolate just crimes related to drugs. However, it is not immediately clear which of these three will be the best attribute to filter on. Thus, we are keeping all three for now, to keep our options open.
+
+## TECH REPORT
+1. How many data points are there in total? How many are there in each group you care about (e.g. if you are dividing your data into positive/negative examples, are they split evenly)? 
+  - Aim for a resource of reasonable size. At least 500 records after cleaning and duplicate removal. Account that part of your data should be used for validation of your results only. 
+  - Do you think this is enough data to perform your analysis later on?
+2. What are the identifying attributes?
+3. Where is the data from?
+  - How did you collect your data?
+  - Is the source reputable?
+  - How did you generate the sample? Is it comparably small or large? Is it representative or is it likely to exhibit some kind of sampling bias?
+  - Are there any other considerations you took into account when collecting your data? This is open-ended based on your data; feel free to leave this blank. (Example: If it's user data, is it public/are they consenting to have their data used? Is the data potentially skewed in any direction?)
+4. How clean is the data? Does this data contain what you need in order to complete the project you proposed to do? (Each team will have to go about answering this question differently but use the following questions as a guide. Graphs and tables are highly encouraged if they allow you to answer these questions more succinctly.)
+  - How did you check for the cleanliness of your data? What was your threshold reference?
+  - Did you implement any mechanism to clean your data? If so, what did you do?
+  - Are there missing values? Do these occur in fields that are important for your project's goals?
+  - Are there duplicates? Do these occur in fields that are important for your project's goals?
+  - How is the data distributed? Is it uniform or skewed? Are there outliers? What are the min/max values? (focus on the fields that are most relevant to your project goals)
+  - Are there any data type issues (e.g. words in fields that were supposed to be numeric)? Where are these coming from? (E.g. a bug in your scraper? User input?) How will you fix them?
+  - Do you need to throw any data away? What data? Why? Any reason this might affect the analyses you are able to run or the conclusions you are able to draw?
