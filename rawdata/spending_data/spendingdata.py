@@ -1,13 +1,12 @@
 import pandas
 
-# source for data: https://stacks.checkbok.edu/file/druid:yg821jf8611/yg821jf8611_ma_statewide_2020_04_01.csv.zip
-# data readme: https://github.com/checkbok-policylab/opp/blob/master/data_readme.md#statewide-ma
+# source for data: https://data.boston.gov/dataset/checkbook-explorer
 
 # pull data into pandas
-
 checkbook_2015 = pandas.read_csv("checkbook-explorer-fy15.csv")
 nrows_checkbok_15, ncols_checkbok_15 = checkbook_2015.shape
 print("there are " + str(nrows_checkbok_15) + " rows and " + str(ncols_checkbok_15) + " cols in raw checkbook_2015")
+
 # filter by police department
 checkbook_2015 = checkbook_2015[checkbook_2015['dept_name'] == "Police Department"]
 nrows_checkbok_15, ncols_checkbok_15 = checkbook_2015.shape
